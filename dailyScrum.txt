@@ -252,10 +252,12 @@ THURSDAY
 14/05/2020 Jessica:
 
 1. What was done since last scrum:
-
+- implemented user registration/login
+- tested file upload with tester project (images only)
 
 2. To do until next scrum:
-
+- continue work on html css for terp
+- continue work on user posts, communities, and comments
 
 3. Need Assistance:
 - N/A
@@ -268,7 +270,7 @@ FRIDAY
 15/05/2020 Jessica:
 
 1. What was done since last scrum:
-
+- 
 
 2. To do until next scrum:
 
@@ -284,10 +286,11 @@ SATURDAY
 16/05/2020 Jessica:
 
 1. What was done since last scrum:
-
+- continued work on html css for terp
+- continue work on user posts, communities, and comments
 
 2. To do until next scrum:
-
+- complete posts, communities, comments, etc.
 
 3. Need Assistance:
 - N/A
@@ -300,10 +303,11 @@ SUNDAY
 17/05/2020 Jessica:
 
 1. What was done since last scrum:
-
+- N/A (worked)
 
 2. To do until next scrum:
-
+- complete posts, communities, comments, etc.
+- start working on presentation
 
 3. Need Assistance:
 - N/A
