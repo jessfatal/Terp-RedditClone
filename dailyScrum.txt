@@ -1,0 +1,376 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+DAILY SCRUM - EVERYDAY
+==============================
+
+THUSDAY
+-----------------
+
+30/04/2020 Jessica:
+First Scrum:
+**what was done since last scrum**
+
+1.To do until next scrum:
+- create user profile picture options (flower, cactus)
+- look into learning laravel
+
+2. Need Assistance:
+- N/A
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+FRIDAY
+-----------------
+
+1/05/2020 Jessica:
+
+1. What was done since last scrum:
+- continued making user user profile picture
+- began video on laravel
+
+2. To do until next scrum:
+- finish laravel video
+- finish user profile picutures
+- look into node.js for laravel
+
+3. Need Assistance:
+-N/A
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SATURDAY
+-----------------
+
+02/05/2020 Jessica:
+
+1. What was done since last scrum:
+- continued work on profile picutes
+- continued videos on laravel
+
+2. To do until next scrum:
+- finish laravel video
+- finish user profile picutures
+- look into node.js for laravel
+
+3. Need Assistance:
+- N/A
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SUNDAY
+-----------------
+
+03/05/2020 Jessica:
+
+1. What was done since last scrum:
+- finished user profile pictures
+- finished laravel videos
+
+2. To do until next scrum:
+- N/A
+
+3. Need Assistance:
+- N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+MONDAY
+-----------------
+
+04/05/2020 Jessica:
+
+1. What was done since last scrum:
+- N/A
+
+2. To do until next scrum:
+- begin trial project using laravel
+- read laravel documentation
+
+3. Need Assistance:
+- N/A
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+TUESDAY
+-----------------
+
+05/05/2020 Jessica:
+
+1. What was done since last scrum:
+- started laravel test project
+
+2. To do until next scrum:
+- continue work
+
+3. Need Assistance:
+- N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+WEDNESDAY
+-----------------
+
+06/05/2020 Jessica:
+
+1. What was done since last scrum
+- continued work on test project
+
+2. To do until next scrum:
+- continue test project
+
+3. Need Assistance:
+- N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+THURSDAY
+-----------------
+
+07/05/2020 Jessica:
+
+1. What was done since last scrum:
+- continued work on test project
+
+2. To do until next scrum:
+- complete laravel test project
+
+3. Need Assistance:
+-N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+FRIDAY
+-----------------
+
+08/05/2020 Jessica:
+
+1. What was done since last scrum:
+- continued test project
+
+2. To do until next scrum:
+- N/A (work on cv- workshop)
+
+3. Need Assistance:
+-N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SATURDAY
+-----------------
+
+09/05/2020 Jessica:
+
+1. What was done since last scrum:
+- (worked on cv due to workshop)
+
+2. To do until next scrum:
+- continue working on test project
+
+3. Need Assistance:
+- N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SUNDAY
+-----------------
+
+10/05/2020 Jessica:
+
+1. What was done since last scrum:
+- continued work on cv
+
+2. To do until next scrum:
+- continue practice with test project
+
+3. Need Assistance:
+- N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+MONDAY
+-----------------
+
+11/05/2020 Jessica:
+
+1. What was done since last scrum:
+- N/A (mother's day)
+
+2. To do until next scrum:
+- complete CRUD with laravel
+- implement file upload (video and images)
+
+3. Need Assistance:
+- N/A
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+TUESDAY
+-----------------
+
+12/05/2020 Jessica:
+
+1. What was done since last scrum:
+- completed CRUD using laravel
+
+2. To do until next scrum:
+- implement CRUD for terp
+- test file upload for with tester project (with images and video)
+- test youtube player with iframe
+
+3. Need Assistance:
+- N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+WEDNESDAY
+-----------------
+
+13/05/2020 Jessica:
+
+1. What was done since last scrum:
+- tested yotube player with iframe in test project
+
+2. To do until next scrum:
+- implement CRUD for terp
+- test file upload for with tester project (with images and video)
+- add css to terp
+
+3. Need Assistance:
+- N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+THURSDAY
+-----------------
+
+14/05/2020 Jessica:
+
+1. What was done since last scrum:
+
+
+2. To do until next scrum:
+
+
+3. Need Assistance:
+- N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+FRIDAY
+-----------------
+
+15/05/2020 Jessica:
+
+1. What was done since last scrum:
+
+
+2. To do until next scrum:
+
+
+3. Need Assistance:
+- N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SATURDAY
+-----------------
+
+16/05/2020 Jessica:
+
+1. What was done since last scrum:
+
+
+2. To do until next scrum:
+
+
+3. Need Assistance:
+- N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SUNDAY
+-----------------
+
+17/05/2020 Jessica:
+
+1. What was done since last scrum:
+
+
+2. To do until next scrum:
+
+
+3. Need Assistance:
+- N/A
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+MONDAY
+-----------------
+
+17/05/2020 Jessica:
+
+1. What was done since last scrum:
+
+
+2. To do until next scrum:
+
+
+3. Need Assistance:
+- N/A
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+TUESDAY
+-----------------
+
+18/05/2020 Jessica:
+
+1. What was done since last scrum:
+
+
+2. To do until next scrum:
+
+
+3. Need Assistance:
+- N/A
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+WEDNESDAY
+-----------------
+
+19/05/2020 Jessica:
+
+1. What was done since last scrum:
+
+
+2. To do until next scrum:
+
+
+3. Need Assistance:
+- N/A
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+THURSDAY
+-----------------
+
+20/05/2020 Jessica:
+
+1. What was done since last scrum:
+
+
+2. To do until next scrum:
+
+
+3. Need Assistance:
+- N/A
