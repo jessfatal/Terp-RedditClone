@@ -128,6 +128,7 @@
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1c48AteinscvS5p5aEDnvLo6JEb" />
@@ -167,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589776365019</updated>
-      <workItem from="1589776373425" duration="33411000" />
+      <workItem from="1589776373425" duration="43085000" />
     </task>
     <servers />
   </component>
@@ -198,10 +199,11 @@
       <screen x="404" y="-768" width="1360" height="728" />
     </state>
     <state x="791" y="-768" width="585" height="728" key="find.popup/0.0.1728.1112/404.-768.1360.728@404.-768.1360.728" timestamp="1589834592819" />
-    <state x="2644" y="70" width="949" height="969" key="search.everywhere.popup" timestamp="1589884257800">
-      <screen x="2160" y="0" width="1920" height="1040" />
+    <state x="436" y="75" width="855" height="1037" key="search.everywhere.popup" timestamp="1589892110365">
+      <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state x="2644" y="70" width="949" height="969" key="search.everywhere.popup/0.0.1728.1112/2160.0.1920.1040@2160.0.1920.1040" timestamp="1589884257800" />
+    <state x="436" y="75" width="855" height="1037" key="search.everywhere.popup/0.0.1728.1112/2160.0.1920.1040@0.0.1728.1112" timestamp="1589892110365" />
+    <state x="2644" y="70" width="949" height="969" key="search.everywhere.popup/0.0.1728.1112/2160.0.1920.1040@2160.0.1920.1040" timestamp="1589886751355" />
     <state x="747" y="-719" width="672" height="678" key="search.everywhere.popup/0.0.1728.1112/404.-768.1360.728@404.-768.1360.728" timestamp="1589865994748" />
   </component>
 </project>
