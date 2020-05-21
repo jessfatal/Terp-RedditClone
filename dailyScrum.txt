@@ -321,10 +321,12 @@ MONDAY
 17/05/2020 Jessica:
 
 1. What was done since last scrum:
-
+- worked on presentation
+- started registration/login for terp
 
 2. To do until next scrum:
-
+- continue working on scaffolding for communities, posts and comments
+- implement friend adding (?)
 
 3. Need Assistance:
 - N/A
@@ -338,10 +340,15 @@ TUESDAY
 18/05/2020 Jessica:
 
 1. What was done since last scrum:
-
+- worked on/completed presentation
+- took minor break
 
 2. To do until next scrum:
-
+- user profile add/edit picture
+- allow for add/edit comments
+- make user profile columns & posts look better
+- continue working on scaffolding for communities, posts and comments
+- implement friend adding (?)
 
 3. Need Assistance:
 - N/A
@@ -355,9 +362,15 @@ WEDNESDAY
 19/05/2020 Jessica:
 
 1. What was done since last scrum:
-
+- user profile coumns and posts look better
+- added desc order for posts to main page
 
 2. To do until next scrum:
+- user profile add/edit picture
+- allow for add/edit comments
+- continue working on scaffolding for communities, posts and comments
+- implement friend adding (?)
+- add comments to code
 
 
 3. Need Assistance:
