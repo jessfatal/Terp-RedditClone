@@ -8,12 +8,12 @@ use Illuminate\Http\Request;
 class ProfilesController extends Controller
 {
 
-    public function index($user)
+    public function index($username)
     {
-        $user = User::findOrFail($user);
+        $username = User::where('username',$username)->first();
 
         return view('profiles.index', [
-            'user' => $user,
+            'username' => $username,
         ]);
     }
 }

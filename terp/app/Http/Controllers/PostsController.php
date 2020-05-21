@@ -18,12 +18,22 @@ class PostsController extends Controller
         return view('posts.create');
     }
 
+    public function index()
+    {
+        $posts = Post::all()->sortByDesc('created_at');
+
+        return view('welcome', [
+            'posts' => $posts,
+        ]);
+    }
+
     public function store()
     {
         $data = request()->validate([
             'title' => 'required',
             'description' => '',
-            'image' => 'required|image',
+            'has_image' => 'required|bool',
+            'image' => 'exclude_if:has_image,false|image',
         ]);
 
         $imagePath = request('image')->store('uploads', 'public');
@@ -37,6 +47,6 @@ class PostsController extends Controller
             'image' => $imagePath,
         ]);
 
-        return redirect('/profile/' . auth()->user()->id);
+        return redirect('/p/' . auth()->user()->username);
     }
 }

@@ -13,13 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PostsController@index');
 
 Auth::routes();
 
 Route::get('/post/create', 'PostsController@create')->name('post.create');
 Route::post('/post', 'PostsController@store')->name('post.store');
 
-Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
+Route::get('/p/{username}', 'ProfilesController@index')->name('profile.show');
