@@ -54,7 +54,7 @@
                         <div class="pt-1">{{ $username->profile->description }}</div>
                     @endisset
                     @isset($username->profile->url)
-                        <div class="pt-1 pb-4"><a href="#">{{ $username->profile->url }}</a></div>
+                        <div class="pt-1 pb-4"><a href="{{ $username->profile->url }}">{{ $username->profile->url }}</a></div>
                     @endisset
                     <div><a href="/p/{{$username->username}}/edit">edit profile</a></div>
 
