@@ -10,10 +10,19 @@ class ProfilesController extends Controller
 
     public function index($username)
     {
+        $wrongUser = $username;
         $username = User::where('username',$username)->first();
 
-        return view('profiles.index', [
-            'username' => $username,
-        ]);
+        if($username){
+            return view('profiles.index', [
+                'username' => $username,
+            ]);
+        }else{
+            return view('profiles.notfound', [
+                'wrongUser' => $wrongUser,
+            ]);
+        }
+
+
     }
 }

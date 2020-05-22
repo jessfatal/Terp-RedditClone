@@ -5,8 +5,14 @@
 
         <div>
             <div class="row">
-                <div class="col-2"></div>
-                <div class="col-6 pt-3 pb-5 justify-content-start"><h1 class="pb-4">overview</h1>
+                <div class="col-4"></div>
+                <div class="col-5 pt-3 pb-5 justify-content-start"><h1 class="pb-4">overview</h1>
+
+                    @if(count($username->posts) === 0)
+                        <div class="row flex-row container-fluid p-2 m-4 bg-light rounded">Hmm... this user has no
+                            posts!
+                        </div>
+                    @endif
 
                     @foreach($username->posts as $post)
                         <div class="row flex-row container-fluid p-2 m-4 bg-light rounded">
@@ -18,19 +24,26 @@
                                 </div>
                             </div>
                             <div class="col-10 pt-2 pb-2">
-                                Posted by <a href="/home">{{$username->username}}</a> on <span>May 12, 2020</span>
+                                Posted by <a href="/p/{{$post->user->username}}">{{$post->user->username}}</a> on <span>{{ \Carbon\Carbon::parse($post->created_at)->format('d/m/Y')}} at {{ \Carbon\Carbon::parse($post->created_at)->format('g:i A') }}</span>
                                 <div class="pt-3"><h3>{{ $post->title }}</h3></div>
-                                <div class="p-3">{{ $post->description }}</div>
-                                <img src="/storage/{{ $post->image }}" alt="user picture" class="img-fluid"
+                                <div class="p-3">{{ substr($post->description, 0, 80) }}</div>
+                                <img src="/storage/{{ $post->image  }}" alt="image" class="img-fluid"
                                      width="100%">
                             </div>
                         </div>
                     @endforeach
 
-                </div>
-                <div class="col-4 p-3 text-center">
-                    <img src="../images/user_flower_or.png" alt="user picture" class="w-50 rounded-circle p-1">
 
+                </div>
+                <div class="col-4 p-3 text-center position-fixed">
+
+                    @isset($username->image)
+                        <img src="/storage/{{ $username->image }}" alt="user picture" class="w-25 rounded-circle p-1">
+                    @endisset
+
+                    @empty($username->image)
+                        <img src="../images/user_default.png" alt="default user picture" class="w-25 rounded-circle p-1">
+                    @endempty
 
                     <h2 class="p-3">{{ $username->username }}</h2>
 
@@ -43,6 +56,7 @@
                     @isset($username->profile->url)
                         <div class="pt-1 pb-4"><a href="#">{{ $username->profile->url }}</a></div>
                     @endisset
+                    <div><a href="/p/{{$username->username}}/edit">edit profile</a></div>
 
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-outline-dark">

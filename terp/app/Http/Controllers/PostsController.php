@@ -8,14 +8,10 @@ use Intervention\Image\Facades\Image;
 
 class PostsController extends Controller
 {
+
     public function __construct()
     {
-        $this->middleware('auth');
-    }
-
-    public function create()
-    {
-        return view('posts.create');
+        $this->middleware('auth', ['except' =>['index']]);
     }
 
     public function index()
@@ -27,25 +23,39 @@ class PostsController extends Controller
         ]);
     }
 
+    public function create()
+    {
+        return view('posts.create');
+    }
+
     public function store()
     {
         $data = request()->validate([
             'title' => 'required',
             'description' => '',
-            'has_image' => 'required|bool',
-            'image' => 'exclude_if:has_image,false|image',
+            'image' => 'image',
         ]);
 
-        $imagePath = request('image')->store('uploads', 'public');
+        if(request()->hasFile('image')){
 
-        $image = Image::make(public_path("storage/{$imagePath}"))->fit(1200, 1200);
-        $image->save();
+            $imagePath = request('image')->store('uploads', 'public');
 
-        auth()->user()->posts()->create([
-            'title' => $data['title'],
-            'description' => $data['description'],
-            'image' => $imagePath,
-        ]);
+            $image = Image::make(public_path("storage/{$imagePath}"))->fit(1200, 1200);
+            $image->save();
+
+            auth()->user()->posts()->create([
+                'title' => $data['title'],
+                'description' => $data['description'],
+                'image' => $imagePath,
+            ]);
+        } else{
+
+            auth()->user()->posts()->create([
+                'title' => $data['title'],
+                'description' => $data['description'],
+            ]);
+        }
+
 
         return redirect('/p/' . auth()->user()->username);
     }
