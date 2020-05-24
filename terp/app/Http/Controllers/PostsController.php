@@ -39,6 +39,7 @@ class PostsController extends Controller
             'title' => 'required',
             'description' => '',
             'image' => 'image',
+            'url' => '',
         ]);
 
         if(request()->hasFile('image')){
@@ -53,7 +54,28 @@ class PostsController extends Controller
                 'description' => $data['description'],
                 'image' => $imagePath,
             ]);
-        } else{
+        }else if(request()->has('url')){
+            $shortUrlRegex = '/youtu.be\/([a-zA-Z0-9_]+)\??/i';
+            $longUrlRegex = '/youtube.com\/((?:embed)|(?:watch))((?:\?v\=)|(?:\/))(\w+)/i';
+
+            $ytUrl = request('url');
+
+            if (preg_match($longUrlRegex, $ytUrl, $matches)) {
+                $youtube_id = $matches[count($matches) - 1];
+            }
+
+            if (preg_match($shortUrlRegex, $ytUrl, $matches)) {
+                $youtube_id = $matches[count($matches) - 1];
+            }
+
+            $ytEmbed = 'https://www.youtube.com/embed/' . $youtube_id ;
+
+            auth()->user()->posts()->create([
+                'title' => $data['title'],
+                'description' => $data['description'],
+                'url' => $ytEmbed,
+            ]);
+        }  else{
 
             auth()->user()->posts()->create([
                 'title' => $data['title'],

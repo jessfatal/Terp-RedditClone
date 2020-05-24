@@ -47,6 +47,17 @@
                     </div>
 
                     <div class="form-group row">
+                        <label for="url" class="col-md-4 col-form-label ">URL</label>
+                        <input id="url"
+                               type="url" class="form-control @error('url') is-invalid @enderror"
+                               name="url" value="{{ old('url') }}">
+
+                        @error('url')
+                            <strong>{{ $message }}</strong>
+                        @enderror
+                    </div>
+
+                    <div class="form-group row">
                         <button class="btn btn-primary p-2 mt-4">Add new post</button>
                     </div>
 
