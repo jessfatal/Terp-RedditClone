@@ -5,10 +5,12 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Jcc\LaravelVote\Vote;
 
 class User extends Authenticatable
 {
     use Notifiable;
+    use Vote;
 
     /**
      * The attributes that are mass assignable.
@@ -45,5 +47,29 @@ class User extends Authenticatable
     public function profile()
     {
         return $this->hasOne(Profile::class);
+    }
+
+    public function vote($user, $vote, $post_id)
+    {
+        $user = User::where('username', $user)->first();
+        $post = Post::where('id', $post_id)->first();
+
+        if ($vote == 'up'){
+            if ($user->hasUpVoted($post)){
+                $user->cancelVote($post);
+            }else{
+                $user->upVote($post);
+            }
+        }
+
+        if ($vote == 'down'){
+            if ($user->hasDownVoted($post)){
+
+                $user->cancelVote($post);
+            }else{
+                $user->downVote($post);
+            }
+
+        }
     }
 }

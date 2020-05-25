@@ -11,17 +11,17 @@ class ProfilesController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth', ['except' =>['index']]);
+        $this->middleware('auth', ['except' => ['index']]);
     }
 
     public function index($username)
     {
         $wrongUser = $username;
-        $username = User::where('username',$username)->first();
+        $username = User::where('username', $username)->first();
 
-        if($username){
+        if ($username) {
             return view('profiles.index', compact('username'));
-        }else{
+        } else {
             return view('profiles.notfound', compact('wrongUser'));
         }
 
@@ -30,7 +30,10 @@ class ProfilesController extends Controller
 
     public function edit($username)
     {
-        $username = User::where('username',$username)->first();
+        $username = User::where('username', $username)->first();
+
+        $this->authorize('update', $username->profile);
+
 
         return view('profiles.edit', compact('username'));
     }
@@ -38,7 +41,9 @@ class ProfilesController extends Controller
     public function update($username)
     {
 
-        $username = User::where('username',$username)->first();
+        $username = User::where('username', $username)->first();
+
+        $this->authorize('update', $username->profile);
 
         $data = request()->validate([
             'title' => '',
@@ -53,7 +58,7 @@ class ProfilesController extends Controller
 
         $imagePath = null;
 
-        if(request()->hasFile('image')) {
+        if (request()->hasFile('image')) {
             $imagePath = request('image')->store('uploads', 'public');
 
             $image = Image::make(public_path("storage/{$imagePath}"))->fit(1200, 1200);
@@ -61,10 +66,9 @@ class ProfilesController extends Controller
         }
 
 
+        auth()->user()->profile->update($data);
 
-        $username->profile->update($data);
-
-        if (!is_null($imagePath)){
+        if (!is_null($imagePath)) {
             $username->image = $imagePath;
             $username->save();
         }

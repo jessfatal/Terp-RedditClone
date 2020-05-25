@@ -18,7 +18,10 @@ Route::get('/', 'PostsController@index');
 Auth::routes();
 
 Route::get('/post/create', 'PostsController@create')->name('post.create');
+Route::get('/post/{id}', 'PostsController@view')->name('post.view');
 Route::post('/post', 'PostsController@store')->name('post.store');
+
+Route::post('/post/{user}/{vote}/{post_id}', 'User@vote')->name('post.vote');
 
 Route::get('/p/{username}', 'ProfilesController@index')->name('profile.show');
 Route::get('/p/{username}/edit', 'ProfilesController@edit')->name('profile.edit');

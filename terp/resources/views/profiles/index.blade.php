@@ -25,16 +25,18 @@
                             </div>
                             <div class="col-10 pt-2 pb-2">
                                 Posted by <a href="/p/{{$post->user->username}}">{{$post->user->username}}</a> on <span>{{ \Carbon\Carbon::parse($post->created_at)->format('d/m/Y')}} at {{ \Carbon\Carbon::parse($post->created_at)->format('g:i A') }}</span>
-                                <div class="pt-3"><h3>{{ $post->title }}</h3></div>
+                                <div class="pt-3"><h3><a href="/post/{{ $post->id }}">{{ $post->title }}</a></h3></div>
                                 @isset($post->description)
-                                    <div class="p-3">{{ $post->description }}</div>
+                                    <div class="p-3">{{ substr($post->description, 0,50) }}</div>
                                 @endisset
                                 @isset($post->image)
                                     <img src="/storage/{{ $post->image }}" alt="picture" class="img-fluid"
                                          width="100%">
                                 @endisset
                                 @isset( $post->url )
-                                    <iframe class="embed-responsive-1by1" src="{{ $post->url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe class="embed-responsive-1by1" src="{{ $post->url }}" frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
                                 @endisset
 
                             </div>
@@ -50,7 +52,8 @@
                     @endisset
 
                     @empty($username->image)
-                        <img src="../images/user_default.png" alt="default user picture" class="w-25 rounded-circle p-1">
+                        <img src="../images/user_default.png" alt="default user picture"
+                             class="w-25 rounded-circle p-1">
                     @endempty
 
                     <h2 class="p-3">{{ $username->username }}</h2>
@@ -62,9 +65,13 @@
                         <div class="pt-1">{{ $username->profile->description }}</div>
                     @endisset
                     @isset($username->profile->url)
-                        <div class="pt-1 pb-4"><a href="{{ $username->profile->url }}">{{ $username->profile->url }}</a></div>
+                        <div class="pt-1 pb-4"><a href="{{ $username->profile->url }}">{{ $username->profile->url }}</a>
+                        </div>
                     @endisset
-                    <div><a href="/p/{{$username->username}}/edit">edit profile</a></div>
+
+                    @can('update', $username->profile)
+                        <div class="p-4"><a href="/p/{{$username->username}}/edit">edit profile</a></div>
+                    @endcan
 
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-outline-dark">

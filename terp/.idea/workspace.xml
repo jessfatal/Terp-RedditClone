@@ -129,6 +129,7 @@
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/jcc/laravel-vote" />
     </include_path>
   </component>
   <component name="ProjectId" id="1c48AteinscvS5p5aEDnvLo6JEb" />
@@ -173,7 +174,7 @@
       <workItem from="1589986536700" duration="15224000" />
       <workItem from="1590030176838" duration="3343000" />
       <workItem from="1590068918470" duration="28665000" />
-      <workItem from="1590341153479" duration="5819000" />
+      <workItem from="1590341153479" duration="25163000" />
     </task>
     <servers />
   </component>
@@ -193,12 +194,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="521" y="182" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590182500813">
-      <screen x="0" y="0" width="1728" height="1112" />
+    <state x="814" y="-649" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590352560778">
+      <screen x="404" y="-768" width="1360" height="728" />
     </state>
     <state x="521" y="182" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1728.1112/2160.0.1858.1080@0.0.1728.1112" timestamp="1590182500813" />
     <state x="2720" y="177" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1728.1112/2160.0.1858.1080@2160.0.1858.1080" timestamp="1590152721314" />
-    <state x="814" y="-649" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1728.1112/404.-768.1360.728@404.-768.1360.728" timestamp="1589859561119" />
+    <state x="814" y="-649" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1728.1112/404.-768.1360.728@404.-768.1360.728" timestamp="1590352560778" />
     <state x="893" y="-490" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589860245788">
       <screen x="404" y="-768" width="1360" height="728" />
     </state>
@@ -211,19 +212,20 @@
       <screen x="404" y="-768" width="1360" height="728" />
     </state>
     <state x="791" y="-768" width="585" height="728" key="find.popup/0.0.1728.1112/404.-768.1360.728@404.-768.1360.728" timestamp="1589834592819" />
-    <state x="521" y="259" key="run.anything.popup" timestamp="1590158956597">
-      <screen x="0" y="0" width="1728" height="1112" />
+    <state x="814" y="-598" key="run.anything.popup" timestamp="1590370464040">
+      <screen x="404" y="-768" width="1360" height="728" />
     </state>
     <state x="521" y="259" key="run.anything.popup/0.0.1728.1112/2160.0.1858.1080@0.0.1728.1112" timestamp="1590158956597" />
-    <state x="436" y="75" width="855" height="1037" key="search.everywhere.popup" timestamp="1590342989899">
-      <screen x="0" y="0" width="1728" height="1112" />
+    <state x="814" y="-598" key="run.anything.popup/0.0.1728.1112/404.-768.1360.728@404.-768.1360.728" timestamp="1590370464040" />
+    <state x="747" y="-719" width="672" height="678" key="search.everywhere.popup" timestamp="1590366534004">
+      <screen x="404" y="-768" width="1360" height="728" />
     </state>
     <state x="436" y="75" width="855" height="1037" key="search.everywhere.popup/0.0.1728.1112/2160.0.1858.1080@0.0.1728.1112" timestamp="1590182906060" />
     <state x="2629" y="73" width="920" height="1008" key="search.everywhere.popup/0.0.1728.1112/2160.0.1858.1080@2160.0.1858.1080" timestamp="1590162538258" />
     <state x="436" y="75" width="855" height="1037" key="search.everywhere.popup/0.0.1728.1112/2160.0.1920.1040@0.0.1728.1112" timestamp="1589892110365" />
     <state x="2644" y="70" width="949" height="969" key="search.everywhere.popup/0.0.1728.1112/2160.0.1920.1040@2160.0.1920.1040" timestamp="1589886751355" />
     <state x="436" y="75" width="855" height="1037" key="search.everywhere.popup/0.0.1728.1112/404.-768.1360.728@0.0.1728.1112" timestamp="1590342989899" />
-    <state x="747" y="-719" width="672" height="678" key="search.everywhere.popup/0.0.1728.1112/404.-768.1360.728@404.-768.1360.728" timestamp="1589865994748" />
+    <state x="747" y="-719" width="672" height="678" key="search.everywhere.popup/0.0.1728.1112/404.-768.1360.728@404.-768.1360.728" timestamp="1590366534004" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

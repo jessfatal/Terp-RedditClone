@@ -11,7 +11,7 @@ class PostsController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth', ['except' =>['index']]);
+        $this->middleware('auth', ['except' =>['index', 'view']]);
     }
 
     public function index()
@@ -21,6 +21,12 @@ class PostsController extends Controller
         return view('welcome', [
             'posts' => $posts,
         ]);
+    }
+
+    public function view($id){
+
+        $post = Post::where(['id' => $id])->first();
+        return view('posts.view', compact('post'));
     }
 
     public function create()
@@ -54,7 +60,7 @@ class PostsController extends Controller
                 'description' => $data['description'],
                 'image' => $imagePath,
             ]);
-        }else if(request()->has('url')){
+        }else if(!empty(request()->input('url'))){
             $shortUrlRegex = '/youtu.be\/([a-zA-Z0-9_]+)\??/i';
             $longUrlRegex = '/youtube.com\/((?:embed)|(?:watch))((?:\?v\=)|(?:\/))(\w+)/i';
 
